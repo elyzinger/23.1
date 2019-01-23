@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Car mycar = new Car();
+            mycar.brand = "shevrolet";
+            mycar.model = "spark";
+            mycar.km = 35;
+            mycar.year = 2015;
+            Car galcar = new Car();
+            galcar.brand = "mazda";
+            galcar.model = "2";
+            galcar.km = 54;
+            galcar.year = 2016;
+            Car hiscar = new Car();
+            hiscar.brand = "honda";
+            hiscar.model = "civic";
+            hiscar.km = 350;
+            hiscar.year = 2014;
+            mycar.drive();
+            Console.WriteLine(mycar.TellMeYourModel());
+            Console.WriteLine(galcar.TellKm());
+
+
+            Console.ReadLine();
+        }
+    }
+}
